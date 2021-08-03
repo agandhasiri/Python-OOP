@@ -69,12 +69,12 @@ def getPrincipal(limit):
         except ValueError:                                                  # a value error exception
             print("Please enter a number")
 
-    return j
+    return float(j)                                                         # return float value
 #---------------------------------------------------------------------------------
 
 def computeBalance(principal, rate):
 
-    principal=float(principal)                                             # convert the principle amt into a float value
+                                                 
     b=principal + ((principal) * rate)                                     # the formula for balance
  
     return  b
